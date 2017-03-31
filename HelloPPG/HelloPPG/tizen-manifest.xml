@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="3.0" package="org.example.helloppg" version="1.0.0">
+	<profile name="wearable" />
+	<ui-application appid="org.example.helloppg" exec="helloppg" type="capp" multiple="false" taskmanage="true" nodisplay="false">
+		<icon>helloppg.png</icon>
+		<label>helloppg</label>
+	</ui-application>
+    <privileges>
+        <privilege>http://tizen.org/privilege/healthinfo</privilege>
+        <privilege>http://tizen.org/privilege/mediastorage</privilege>
+    </privileges>		
+</manifest>
