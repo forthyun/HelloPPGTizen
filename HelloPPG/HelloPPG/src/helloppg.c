@@ -54,7 +54,7 @@ static void bt_save_cb(appdata_s *ad, Evas_Object *obj, void *event_info) {
 	sprintf(tmp_txt, "%stest_ppg_%d.csv",DOCUMENTS_PATH, gCount);
 	fp = fopen(tmp_txt, "w");
 	for(int i = 0; i < gPPGCount; i++ ) {
-		fprintf(fp, "%llu,%f\n", gPPGTimeArray[i], gPPGLightArray[i]);
+		fprintf(fp, "%llu,%d\n", gPPGTimeArray[i], gPPGLightArray[i]);
 	}
 	fclose(fp);
 	sprintf(tmp_txt, "Saved:(%d, %d, %d)", gCount, gHRMCount, gPPGCount);
